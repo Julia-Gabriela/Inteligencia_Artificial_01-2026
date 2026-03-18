@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 # Etapa 1: Gerar e salvar um CSV com dados simulados
 np.random.seed(42)
 data = {
-    'LotArea': np.random.randint(1300, 215245, size=300),
+    'LotArea': np.random.randint(1300, 220000, size=300),
     'YearBuilt': np.random.randint(1872, 2010, size=300),
     'OverallQual': np.random.randint(1, 10, size=300),
-    'SalePrice': np.random.normal(180000, 80000, size=300).round(2)
+    'SalePrice': np.random.normal(755000, 34900, size=300).round(2)
 }
 df = pd.DataFrame(data)
 df.to_csv("train.csv", index=False)
